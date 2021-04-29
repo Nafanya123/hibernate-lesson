@@ -1,6 +1,7 @@
 package com.example.demo.services;
 
-import com.example.demo.UniversityStorage;
+import com.example.demo.pojo.AnyDataPOJO;
+import com.example.demo.storage.UniversityStorage;
 import com.example.demo.entity.University;
 import com.example.demo.repository.UniversityRepository;
 import org.springframework.beans.factory.annotation.Autowired;

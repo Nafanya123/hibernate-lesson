@@ -16,4 +16,13 @@ public class StudentService {
     public List<Student> getAllStudents() {
         return studentRepository.findAll();
     }
+
+    public List<Student> save(Student student) {
+        try {
+            studentRepository.save(student);
+            return getAllStudents();
+        } catch (Exception e) {
+            throw new RuntimeException("");
+        }
+    }
 }

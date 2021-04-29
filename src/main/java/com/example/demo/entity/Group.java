@@ -1,11 +1,15 @@
 package com.example.demo.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 
 import javax.persistence.*;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "\"group\"")
 public class Group {
@@ -23,28 +27,4 @@ public class Group {
     @Cascade(CascadeType.SAVE_UPDATE)
     @JsonBackReference
     private University university;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public University getUniversity() {
-        return university;
-    }
-
-    public void setUniversity(University university) {
-        this.university = university;
-    }
 }

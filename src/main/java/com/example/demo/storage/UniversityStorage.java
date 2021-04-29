@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.storage;
 
 import com.example.demo.configs.SessionProvider;
 import com.example.demo.entity.University;
